@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_alignParentTop="true">
+
+	<include
+		android:id="@+id/patient_info"
+		layout="@layout/patient_list_item" />
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1.0" />
+	<LinearLayout
+		android:id="@+id/buttonholder"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:paddingTop="8dip"
+        android:paddingBottom="2dip" >
+
+		<Button
+			android:id="@+id/fill_forms"
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+			android:text="@string/fill_patient_forms"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:minHeight="90px"
+            android:padding="6dp"
+            android:textSize="16dp" />
+	</LinearLayout>
+</LinearLayout>

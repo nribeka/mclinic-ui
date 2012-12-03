@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/title_template"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	android:paddingTop="8dip"
+	android:paddingBottom="8dip"
+	android:paddingLeft="12dip"
+	android:paddingRight="12dip">
+
+	<TextView
+		android:id="@+id/alertMessage"
+		android:textSize="22dip"
+		android:textColor="#FFFFFF"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="alertMessage" />
+</LinearLayout>
+

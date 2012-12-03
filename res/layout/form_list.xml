@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_alignParentTop="true">
+	
+	<LinearLayout
+        android:id="@+id/formsholder"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >	
+		<ListView
+			android:id="@id/android:list"
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1.0" />
+		
+		<TextView
+		    android:id="@android:id/empty"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:text="@string/no_forms"
+		    android:textSize="19dp"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:gravity="center"
+		    android:background="@drawable/white"
+		    android:textColor="@drawable/black" />
+	</LinearLayout>
+	<LinearLayout
+        android:id="@+id/buttonholder"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:paddingTop="8dip"
+        android:paddingBottom="2dip" >
+		
+		 <Button
+			android:id="@+id/refresh_forms"
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+			android:text="@string/refresh_forms"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:minHeight="90px"
+            android:padding="6dp"
+            android:textSize="16dp" />
+
+	</LinearLayout>
+</LinearLayout>
